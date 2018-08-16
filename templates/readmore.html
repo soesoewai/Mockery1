@@ -1,0 +1,155 @@
+<html>
+    <head>      
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/materialize.min.css')}}"  media="screen,projection"/>
+		  <link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<style>
+					main
+						{
+							background-color:#CCC;
+							flex: 1 0 auto;
+
+					
+				
+					.demo-layout-transparent 
+						{
+							background: url('grey.jpg') center / cover;
+							background-color:grey;
+						}
+					.demo-layout-transparent .mdl-layout__header,.demo-layout-transparent .mdl-layout__drawer-button 
+						{  
+							color: white;
+					
+					.btn-large
+						{
+							margin-left:530px;
+						}
+						p{
+						
+						font-size:20px;
+						line-height:30px;
+						}
+						
+						
+   			</style>
+	</head>
+	<body>
+			<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Explore Through Key Periods </span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+       <a class="mdl-navigation__link" href="myanmar.html">Myanmar</a>
+       <a class="mdl-navigation__link" href="{{url_for('home')}}">English</a>
+        
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">LostFootSteps</span>
+    <nav class="mdl-navigation">
+	    <a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>
+						  <a class="mdl-navigation__link" href="{{url_for('topics')}}">Explore through key periods</a>
+						  <a class="mdl-navigation__link" href="{{url_for('history')}}">History Timeline</a>
+						  <a class="mdl-navigation__link" href="readmore.html">About this project</a>
+						  <a class="mdl-navigation__link" href="index.html">About this project</a>
+    </nav>
+  </div>
+
+				<main class="mdl-layout__content">
+				
+				<h3 class="center">About this project</h3>
+				<p >
+				The aim of this website is to promote interest in Myanmar's amazing history. <br>
+Our hope is to challenge the often two-dimensional and uncritical views of history taught 
+in Myanmar by reexamining key periods in the country's past. We would like as well to 
+reveal the rich multicultural nature of Myanmar's history and its deep and ongoing ties to global events and trends.<br>
+Finally, this website will also delve into the history of neighbouring regions, such as 
+Yunnan in China and the Northeast in India, in the hope of introducing these places to a Myanmar audience.<br>
+We believe that meeting Myanmar's many challenges today will require fresh imaginative thinking.<br>
+ This is turn will only be possible with a clear and critical understanding of Myanmar and global history.<br>
+This website is initially based on Thant Myint-U's Facebook page. From 2012-208 he posted over 4,000 posts, the vas
+t majority linked to Myanmar's history. These are now being translated in Myanmar and will form the foundations of 
+this website. We hope by placing these posts, in Myanmar and on this website, they will be more accessible.
+The intention though is to grow this website, by including new posts, as well as through new and interactive ways o
+f thinking of Myanmar history.
+This website is a project of U Thant House, a museum and leading discussion centre in Yangon, dedicated t
+o the former UN Secretary-General and the issues he cared about the most, including peace, sustainable development,
+ the environment, and human rights<br><br>
+ For more information, please see:<a href="" >uthanthouse.org</a><br><br>
+The development of this website was made possible by a generous grant from the Government of Denmark and the support of Phandeeyar, Myanmar's leading technology hub..
+				</p>
+				
+				<div class="row">
+				
+				<h6 class="center"> About Us</h6>
+				  <div class="col s4"> <img src="{{url_for('static',filename='images/thanmyint.jpg')}}" width="300" height="300">
+				  <br><p class="center">
+				  <h6>Kyaw Win Thant</h6><h6>U Thant House Chairman and Project Head<h6>
+Dr Thant Myint-U is an award-winning writer, historian, and former Fellow 
+of Trinity College, 
+Cambridge. He has served on three United Nations peacekeeping operations 
+and as the Chief of 
+Policy Planning in the UN's Department of Political Affairs. His three books 
+include the best-selling
+ "Where China Meets India: Burma and the New Crossroads of Asia". He is also
+ the Founder
+ of the Yangon Heritage Trust and a Founding Partner of the Ava Advisory Group. </P></div>
+					<div class="col s4"><img src="{{url_for('static',filename='images/jaili.jpg')}}" width="300" height="300">
+					<br><br>
+					<p class="center">
+					<h6>Li Jia Li</h6>
+<h6>Website Developer</h6>
+Jia Li is an experienced web developer and designer.
+ He is interested in Civic Tech and always looking for opportunities 
+ to use his tech and design skills for social changes. Currently,
+ he is working at Phandeeyar as Web Developer / UI Designer for Open 
+ Development Myanmar, an open data portal for Myanmar. Before joining
+ Phandeeyar, he also worked with organizations such as Open Myanmar 
+Initiative, Maepaysoh (Election Hack Challenge) and hacked in many hackathons to make changes with Technology. 
+					</p></div>
+					<div class="col s4"><img src="{{url_for('static',filename='images/zinmar.jpg')}}" width="300" height="300">
+					<br><p class="center">
+					<h6>Zin Mar Myint</h6>
+<h6>Website Editor and Translator</h6>
+Zin Mar Myint grew up in a middle-class family in Yangon.
+ She identifies as Burmese (even though her not-too-far ancestors were Indian and Chinese). Zin Mar Myint has been a writer/translator/journalist ever since she found her passion for writing and her country 8 years ago. She has an undergraduate degree from University of Pharmacy, Yangon and a Master’s degree in Journalism and Mass Communications from Kansas State University. S
+he is currently working toward a PhD in peace journalism at Queensland University of Technology. 
+	
+	</p>
+	</div>
+    </div>		
+	<div class="row">
+		<div class="col s4"><img src="{{url_for('static',filename='images/sunwe.jpg')}}" width="300" height="300">
+		<br> <p class="center">
+<h6>Su Nwe</h6>
+<h6>Website Adviser and Translator<h6>
+Su Nwe is a freelance translator and writer. She has worked with various businesses 
+ NGOs since 2014. She has written more than 100 articles in journals and newspapers since
+ 2012 and published two article collection books in 2014 and 2016. She graduated Masters of Business Ad
+ ministration (MBA) from Yangon University of Economics. Currently she’s doing freelance translation wor
+ k and teaching business courses. </p>
+</div>
+<div class="col s4"><img src="{{url_for('static',filename='images/kyaw.jpg')}}" width="300" height="300"><br>
+<p class="center"><h6>Kyaw Win Thant</h6>
+   <br> <h6>Translator</h6>
+Kyaw Win Thant was born in Nyaung Shwe, on May 29 1989. Parents are U Win Swe and Daw Nang Hla. He has a younger brother called Aung Win Thant. Parents were school teachers until 1993. In 1994 the family moved to Meiktila and Kyaw Win Thant passed his matric exam in 2005 from No.(1) Basic Education High School, Meiktila. He then joined University of Medicine, Mandalay and was graduated. The very first satire of Kyaw Win Thant was named “Music is now occupying the world so fast_ feels like thunderbolt!” and was pressed in Joke’s United magazines back in 2012. Then he wrote some essays and satires in University of Medicine, Mandalay Magazine and UMM student union journal. A book called “Northern Lights” was released in August 2017_Kyaw Win Thant was one of the eight essayists. He is now living in No(1) Ward, Hpa Ann, Ka Yin State and working as a manager in an INGO called Pact in Myanmar. 
+</p>
+</div>
+
+
+	
+	</div>
+				</main>
+			</div>
+
+
+			<script src="{{url_for('static',filename='js/material.min.js')}}"></script>
+            <script type="text/javascript" src="{{url_for('static',filename='js/materialize.min.js')}}"></script>
+	</body>
+</html>

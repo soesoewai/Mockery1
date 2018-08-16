@@ -1,0 +1,186 @@
+<html>
+    <head>      
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/materialize.min.css')}}"  media="screen,projection"/>
+		  <link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<style>
+					main
+						{
+							background-color:#fbe9e7 ;
+							flex: 1 0 auto;
+						}
+					.row
+						{
+							margin-left:40px;
+						}
+					.demo-layout-transparent 
+						{
+							background: url('grey.jpg') center / cover;
+								background-color:grey;
+						}
+					.demo-layout-transparent .mdl-layout__header,.demo-layout-transparent .mdl-layout__drawer-button 
+						{  
+							color: white;
+						}
+					#text4
+						{
+							border-radius: 4px;
+							padding: 0px;
+							border: 5px solid rgba(0,0,0,0.15);
+							box-shadow: 3px 5px 6px rgba(0,0,0,0.05);
+							height:300px;
+							width:500px;
+							margin-left:400px;
+						}
+					.btn-large
+						{
+							margin-left:530px;
+						}
+					.centered 
+						{
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							background-color:#CCC;
+							opacity:0.8;
+						}
+					h2
+						{
+							margin:220px;
+							
+							background-color:#b2dfdb;
+							font-family:
+						}
+					p	
+						{
+							font-size:18px;
+						}
+					#test3
+						{
+							background-color:white;
+						}
+					
+   			</style>
+	</head>
+	<body>
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout" id="text2">
+			<header class="mdl-layout__header mdl-layout__header--transparent">
+				<div class="mdl-layout__header-row">
+					<span class="mdl-layout-title">Lost FootStep</span>
+					<div class="mdl-layout-spacer"></div>
+					<nav class="right-side mdl-navigation">
+						<a class="mdl-navigation__link" href="myanmar.html">Myanmar</a>
+						<a class="mdl-navigation__link" href="index.html">English</a>
+					</nav>
+				</div>
+			</header>
+			<h2><strong>Exporations in Myanmar and Global History</strong></h2>
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title">Lost FootStep</span>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="index.html">Home</a>
+					<a class="mdl-navigation__link" href="{{url_for('topics')}}">Explore through key periods</a>
+					<a class="mdl-navigation__link" href="{{url_for('history')}}">History Timeline</a>
+					<a class="mdl-navigation__link" href="{{url_for('readmore')}}">About this project</a>
+					<a class="devider"
+				   <a class="mdl-navigation__link" href="index.html">About this project</a>
+				</nav>
+			</div>	
+			<!--start main -->
+			<main class="mdl-layout__content">
+			<!--grid -->
+				<div id="test1" class="container-fluid">
+				<h3 class="center"><strong>Explore Through Key Periods</strong></h3>
+					<div class="row">
+						<div class="col s4">
+							<a href=""><img src="{{url_for('static',filename='images/independence1.jpg')}}" width="400" height="400">
+							<div class="centered"></div>
+					     	</a>
+						</div>
+						<div class="col s4">
+							<a href=""><img class="effect-sadie" src="{{url_for('static',filename='images/independence2.jpg')}}" width="400" height="400">
+							<div class="centered"></div>
+							</a>
+						</div>
+						<div class="col s4">
+							<a href=""><img src="{{url_for('static',filename='images/independence3.jpg')}}" width="400" height="400">
+							<div class="centered"></div>
+							</a>  
+						</div>
+					</div>
+					<a class="waves-effect waves-light btn-large" href="{{url_for('topics')}}"><i class="large material-icons left">explore</i>Explore All Topics</a>	
+				<br>
+				<br>
+				</div>
+			<!--grid end-->
+		
+			<!--today post-->
+				<div class="container-fluid" id="test3">
+					<br>
+					<br>
+					<h3 class="center">Today's Hightlighted Post</h3>
+					<h3 class="center">1902 - 1922</h3>
+					<h5 class="center">A mysterious Burmese prince?</h5>
+					<img src="images/mgmgkyi.jpg" id="text4">
+					<br><br><br>
+					<p class="center">
+						The only photograph I know of King Thibaw's school. This was the SPG 
+						School also known as "Dr Marks School" in Mandalay, just to the west of the palace walls							Rev. James Ebenezer Marks who had been the headmaster of St John's School in Rangoon was 
+						invited in 1869 by King Mindon to build the school together with an adjoining church and 
+						clergy house. Seven royal princes including Prince Thibaw attended the school. Prince Thibaw 
+						was remembered as a "tolerably...
+					</p>
+					<a class="waves-effect waves-light btn-large" href="{{url_for('view')}}"><i class="large material-icons left">comment</i>View All Post</a>
+					<br><br><br>
+				</div>
+				<!--end today post-->
+				<!--start history timeline-->
+				<div class="container-fluid">
+					<div class="card horizontal">
+						<img src="images/about5.jpg" width="1500" height="400">
+					</div> 
+				</div>
+				<!--end history timeline-->
+				<!--about start--> 
+				<div class="container-fluid">
+					<h4 class="center">About this Project</h4>
+					<br><br>
+					<p class="center">	The aim of this website is to promote interest in Myanmar's amazing history.
+						Our hope is to challenge the often two-dimensional and uncritical views of history 
+						taught in Myanmar by reexamining key periods in the country's past. We would like as 
+						well to reveal the rich multicultural nature of Myanmar's history and its deep and ongoing 
+						ties to global events and trends.Finally, this website will also delve into the history of
+						neighbouring regions, such as Yunnan in China and the Northeast in India, in the hope of
+						introducing these places to a Myanmar audience.We believe that meeting Myanmar's many challenges 						today will require fresh imaginative thinking. This is turn will only be possible with a clear an
+						d critical understanding of Myanmar and global history. 
+					</p>
+					<a class="waves-effect waves-light btn-large" href="{{url_for('readmore')}}"><i class="large material-icons left">chevron_right</i>Read More</a>
+				</div>
+				<!--end about-->
+				<!--start social-->
+				<div class="container-fluid" id="test3">
+				<h3 class="center">Social</h3>
+				<br><br>
+				<div class="content">
+				
+				</div>
+					
+				</div>
+			</main>
+			<!--end main-->
+			<!--start footer-->
+			<footer class="mdl-mini-footer">
+				<div class="mdl-mini-footer__center-section">
+				<div class="mdl-logo"><p>LostFootSteps 2018. All rights reserved.</p></div>
+				</div>
+			</footer>
+			<!--end footer-->
+		</div>
+
+
+			<script src="{{url_for('static',filename='js/material.min.js')}}"></script>
+            <script type="text/javascript" src="{{url_for('static',filename='js/materialize.min.js')}}"></script>
+	</body>
+</html>

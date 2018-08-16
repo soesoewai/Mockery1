@@ -1,0 +1,175 @@
+<html>
+    <head>      
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/materialize.min.css')}}"  media="screen,projection"/>
+		  <link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<style>
+					main
+						{
+							background-color:#CCC;
+							flex: 1 0 auto;
+
+						}
+					.demo-layout-transparent 
+						{
+							background: url('grey.jpg') center / cover;
+						}
+					.demo-layout-transparent .mdl-layout__header,.demo-layout-transparent .mdl-layout__drawer-button 
+						{  
+							color: white;
+						}
+					
+					.btn-large
+						{
+							margin-left:530px;
+						}
+					.centered 
+						{
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							background-color:#CCC;
+							opacity:0.8;
+							font-variant:upper-roman;
+							font-size30px;
+						}
+						p
+						{
+						font-size:30px;
+						line-height:30px;
+						}
+   			</style>
+	</head>
+	<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Explore Through Key Periods </span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+       <a class="mdl-navigation__link" href="myanmar.html">Myanmar</a>
+       <a class="mdl-navigation__link" href="{{url_for('home')}}">English</a>
+        
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">LostFootSteps</span>
+    <nav class="mdl-navigation">
+       <a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>
+		<a class="mdl-navigation__link" href="topics.html">Explore through key periods</a>
+		<a class="mdl-navigation__link" href="{{url_for('history')}}">History Timeline</a>
+		 <a class="mdl-navigation__link" href="{{url_for('readmore')}}">About this project</a>
+	  <a class="mdl-navigation__link" href="index.html">About this project</a>
+    </nav>
+  </div>
+<main class="mdl-layout__content">
+		<div  class="container-fluid">
+					<br><br>
+						<div class="row">
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img src="{{url_for('static',filename='images/indepen1.jpg')}}" width="400" height="400">
+										<div class="centered"><p>Independence and Civil War (1945-1951)</p></div>
+									</a>
+								</div>
+							</div>
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img class="effect-sadie" src="{{url_for('static',filename='images/indepen3.jpg')}}" width="400" height="400">
+										<div class="centered"><p>Independence and Civil War (1945-1951)</p></div>
+									</a>
+								</div>
+							</div>
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img src="{{url_for('static',filename='images/indepen2.jpg')}}" width="400" height="400">
+										<div class="centered"><p>Ancient Myanmar and the Ancient World (to 900AD)</p></div>
+									</a>
+								</div>   
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img src="{{url_for('static',filename='images/indepen4.jpg')}}" width="400" height="400">
+										<div class="centered"><p>Independence and Civil War (1945-1951)</p></div>
+									</a>
+								</div>
+							</div>
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img class="effect-sadie" src="{{url_for('static',filename='images/indepen1.jpg')}}" width="400" height="400">
+										<div class="centered"><p>Independence and Civil War (1945-1951)</p></div>
+									</a>
+								</div>
+							</div>
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img src="{{url_for('static',filename='images/indepen3.jpg')}}" width="400" height="400">
+										<div class="centered"><p>Ancient Myanmar and the Ancient World (to 900AD)</p></div>
+									</a>
+								</div>   
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img src="{{url_for('static',filename='images/indepen2.jpg')}}" width="400" height="400">
+										<div class="centered"><p>Independence and Civil War (1945-1951)</p></div>
+									</a>
+								</div>
+							</div>
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img class="effect-sadie" src="{{url_for('static',filename='images/indepen4.jpg')}}" width="400" height="400">
+										<div class="centered">
+										<p>Independence and Civil War (1945-1951)</p></div>
+									</a>
+								</div>
+							</div>
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img src="{{url_for('static',filename='images/indepen1.jpg')}}" width="400" height="400">
+										<div class="centered"><p>Ancient Myanmar and the Ancient World (to 900AD)</p></div>
+									</a>
+								</div>   
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img src="{{url_for('static',filename='images/indepen4.jpg')}}" width="400" height="400">
+										<div class="centered"><p>Independence and Civil War (1945-1951)</p></div>
+									</a>
+								</div>
+							</div>
+							<div class="col s4 m4">
+								<div class="card horizontal">
+									<a href=""><img class="effect-sadie" src="{{url_for('static',filename='images/indepen3.jpg')}}" width="600" height="400">
+										<div class="centered"><p>Independence and Civil War (1945-1951)</p></div>
+									</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+				</main>
+				<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__center-section">
+    <div class="mdl-logo"><p>LostFootSteps 2018. All rights reserved.</p></div>
+  </div>
+</footer>
+			</div>
+
+
+			<script src="{{url_for('static',filename='js/material.min.js')}}"></script>
+            <script type="text/javascript" src="{{url_for('static',filename='js/materialize.min.js')}}"></script>
+	</body>
+</html>

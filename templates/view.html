@@ -1,0 +1,151 @@
+<html>
+    <head>      
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/materialize.min.css')}}"  media="screen,projection"/>
+		  <link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<style>
+					main
+						{
+							background-color:#CCC;
+							flex: 1 0 auto;
+
+						}
+					h2
+						{
+							margin-left:330px;
+						}
+					.row
+						{
+							margin-left:40px;
+						}
+			
+					body
+						{
+						
+						}
+					.demo-layout-transparent 
+						{
+							background: url('grey.jpg') center / cover;
+						}
+					.demo-layout-transparent .mdl-layout__header,.demo-layout-transparent .mdl-layout__drawer-button 
+						{  
+							color: white;
+						}
+					#test3
+						{
+							background-color:#FCF;
+						}
+					#test1
+						{
+							background-color:#CCC;
+						}
+					#text2
+						{
+							background-color:#999;
+						}
+					#text4
+						{
+							border-radius: 4px;
+							padding: 0px;
+							border: 5px solid rgba(0,0,0,0.15);
+							box-shadow: 3px 5px 6px rgba(0,0,0,0.05);
+							height:300px;
+							width:500px;
+							margin-left:400px;
+						}
+					h1
+						{
+							margin:120px;
+							background-color:blue;
+						}
+					.btn-large
+						{
+							margin-left:530px;
+						}
+					.centered 
+						{
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							background-color:#CCC;
+							opacity:0.8;
+						} 
+					
+						h3,h5,h4{
+						text-align:center;
+						}
+						p{
+						
+						font-size:20px;
+						}
+   			</style>
+	</head>
+	<body>
+			<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Explore Through Key Periods </span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+       <a class="mdl-navigation__link" href="myanmar.html">Myanmar</a>
+       <a class="mdl-navigation__link" href="{{url_for('home')}}">English</a>
+        
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">LostFootSteps</span>
+    <nav class="mdl-navigation">
+	    <a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>
+    						   <a class="mdl-navigation__link" href="{{url_for('topics')}}">Explore through key periods</a>
+						   <a class="mdl-navigation__link" href="{{url_for('history')}}">History Timeline</a>
+						  <a class="mdl-navigation__link" href="readmore.html">About this project</a>
+						  <a class="mdl-navigation__link" href="{{url_for('home')}}">About this project</a>
+    </nav>
+  </div>
+
+				<main class="mdl-layout__content">
+				<div class="row">
+					<div class="col s6"><img src="{{url_for('static',filename='images/mgmgkyi.jpg')}}" height="800"></div>
+					<div class="col s6"><h3>1902 - 1922</h3>
+<h6>A mysterious Burmese prince?</h6>
+<h6> United Kingdom</h6>
+
+<p>The photograph is from the (UK) National Portrait Gallery. 
+Only a handful of Burmese have ever had their portraits there.
+ He is listed as "Prince Maung Maung Gyi" a great-grandson of King
+ Mindon. Elsewhere, he is listed as a grandson of Thibaw (which is 
+ impossible). His father is listed as "Prince Maung Maung U", but the name
+ of his grandfather (Mindon's son) is listed as "unknown". He was born in 1902
+ and in 1922 seems to have been embroiled in a small scandal. He was an engineering
+ student in London at the time and engaged to a "Sylvia Charlotte Helen Forde of
+ Wimbledon". The Singapore Straits Times of 6 September 1922 though reports that 
+ the Registrar-General (of the UK) had acted to stop the marriage. There was another 
+ article saying the prince was under 21 and did not have
+ his parents consent. After that, the trail goes cold, 
+ except for this photograph in the National Portrait Gallery.
+ <br>
+ <br>
+ <a href="">Explore more in British Burma (1826-1942) </a><br><br>
+<a href= "">Explore all Topics </a>
+ </p></div>
+				</div>
+          
+				</main>
+				<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__center-section">
+    <div class="mdl-logo"><p>LostFootSteps 2018. All rights reserved.</p></div>
+  </div>
+</footer>
+			</div>
+
+
+			<script src="{{url_for('static',filename='js/material.min.js')}}"></script>
+            <script type="text/javascript" src="{{url_for('static',filename='js/materialize.min.js')}}"></script>
+	</body>
+</html>
